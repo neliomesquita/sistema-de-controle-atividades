@@ -46,6 +46,21 @@ const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
             onChange={(e) => setAmount(e.target.value)}
           />
         </C.InputContent>
+      </C.Container>
+
+      <C.Container>
+        <C.InputContent>
+          <C.Label>Descrição</C.Label>
+          <C.Input value={desc} onChange={(e) => setDesc(e.target.value)} />
+        </C.InputContent>
+        <C.InputContent>
+          <C.Label>Valor</C.Label>
+          <C.Input
+            value={amount}
+            type="number"
+            onChange={(e) => setAmount(e.target.value)}
+          />
+        </C.InputContent>
         <C.RadioGroup>
           <C.Input
             type="radio"
